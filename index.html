@@ -3,18 +3,18 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Peter Song</title>
+  <title>Pengfei Song</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Peter`s blog">
+  <meta name="description" content="Pengfei`s blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Peter Song">
-<meta property="og:url" content="http://flay521.com/index.html">
-<meta property="og:site_name" content="Peter Song">
-<meta property="og:description" content="Peter`s blog">
+<meta property="og:title" content="Pengfei Song">
+<meta property="og:url" content="http://flay521.github.io/index.html">
+<meta property="og:site_name" content="Pengfei Song">
+<meta property="og:description" content="Pengfei`s blog">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Peter Song">
-<meta name="twitter:description" content="Peter`s blog">
+<meta name="twitter:title" content="Pengfei Song">
+<meta name="twitter:description" content="Pengfei`s blog">
   
   
     <link rel="icon" href="/favicon.png">
@@ -35,7 +35,7 @@
       <div class="logo">
         <img src="/logo.png" alt="Profile Picture">
       </div>
-      <div id="title">Peter Song</div>
+      <div id="title">Pengfei Song</div>
       
        <ul class="my-socials">
   
@@ -59,7 +59,7 @@
       -->
     </nav>
     <nav id="title-nav" style="display:none">
-      <a href="/">Peter Song</a>
+      <a href="/">Pengfei Song</a>
       <img src="/logo.png" alt="Profile Picture">
       <!--
       <span id="title-nav-socials">
@@ -79,7 +79,7 @@
         <input name="tn" type="hidden" value="bds">
         <input name="cl" type="hidden" value="3">
         <input name="ct" type="hidden" value="2097152">
-        <input type="hidden" name="si" value="flay521.com">
+        <input type="hidden" name="si" value="flay521.github.io">
       </form>
     </div>
   </div>
@@ -124,81 +124,74 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="DIY-Media-Server"><a href="#DIY-Media-Server" class="headerlink" title="DIY Media Server"></a>DIY Media Server</h1><p>##路由主板<br>需要一块工控路由主板，可到Taobao, JD上搜索购买。</p>
+        <h2 id="路由主板"><a href="#路由主板" class="headerlink" title="路由主板"></a>路由主板</h2><p>需要一块工控路由主板，可到Taobao, JD上搜索购买。</p>
 <p>我买的主板配置：</p>
 <ul>
 <li>CPU    :i5-2540M。</li>
 <li>内存    :8G。</li>
 <li>SSD    :120G。</li>
 </ul>
-<p><img src="https://note-for-mweb.b0.upaiyun.com/2019/02/18/IMG_0253.jpg" alt="IMG_0253"></p>
-<p>##制作安装U盘<br>需要一个4G以上的U盘。</p>
-<ol>
-<li>下载安装镜像。</li>
-</ol>
-<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mirrors.163.com/centos/6.10/isos/x86_64/CentOS-6.10-x86_64-minimal.iso</span><br></pre></td></tr></table></figure>
-</code></pre><ol start="2">
-<li><p>格式化U盘，并把系统写入U盘。<br> Mac 可以执行：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">    diskutil unmountDisk /dev/disk2</span><br><span class="line">    sudo dd if=/CentOS-6.10-x86_64-minimal.iso of=/dev/rdisk2 bs=1m</span><br><span class="line">    ~~~ </span><br><span class="line">    </span><br><span class="line">## 安装系统</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">1. U盘插入主板，开始安装系统，大致如下： </span><br><span class="line">    选Skip。</span><br><span class="line">    ![VirtualBox_CentOS Demo_18_02_2019_23_41_28](https://note-for-mweb.b0.upaiyun.com/2019/02/18/VirtualBox_CentOS Demo_18_02_2019_23_41_28.png)</span><br><span class="line"></span><br><span class="line">2. 选语言与键盘，时区等。 ![VirtualBox_CentOS Demo_18_02_2019_23_42_05](https://note-for-mweb.b0.upaiyun.com/2019/02/18/VirtualBox_CentOS Demo_18_02_2019_23_42_05.png)</span><br><span class="line"></span><br><span class="line">3. 设置密码。 ![VirtualBox_CentOS Demo_18_02_2019_23_47_53](https://note-for-mweb.b0.upaiyun.com/2019/02/18/VirtualBox_CentOS Demo_18_02_2019_23_47_53.png)</span><br><span class="line"></span><br><span class="line">4. 分区。 ![VirtualBox_CentOS Demo_18_02_2019_23_48_24](https://note-for-mweb.b0.upaiyun.com/2019/02/18/VirtualBox_CentOS Demo_18_02_2019_23_48_24.png)</span><br><span class="line"></span><br><span class="line">5. 安装系统软件。 ![VirtualBox_CentOS Demo_18_02_2019_23_48_58](https://note-for-mweb.b0.upaiyun.com/2019/02/18/VirtualBox_CentOS Demo_18_02_2019_23_48_58.png)</span><br><span class="line"></span><br><span class="line">##设置网卡</span><br><span class="line">路由器上有6个千兆网口，eth0设置成WAN， 其他设置成LAN。</span><br><span class="line"></span><br><span class="line">有两种情况：</span><br><span class="line">###1)WAN口连接其他路由，直接能上网。</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>vi /etc/sysconfig/network-scripts/ifcfg-eth0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">修改如下内容:</span><br></pre></td></tr></table></figure></p>
-<p>TYPE=Ethernet<br>ONBOOT=yes<br>NM_CONTROLLED=yes<br>BOOTPROTO=dhcp<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">###2) WAN连接的是Modem，需要拨号。</span><br></pre></td></tr></table></figure></p>
-<p>yum install ppp rp-pppoe<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">执行 pppoe-setup  按照提示填写ISP 提供的账号密码。</span><br></pre></td></tr></table></figure></p>
-<p>pppoe-setup<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">###设置桥连接。把eth1-eth5 5个网口关联到 br0。</span><br></pre></td></tr></table></figure></p>
-<p>vi /etc/sysconfig/network-scripts/ifcfg-br0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">修改如下内容：</span><br></pre></td></tr></table></figure></p>
-<p>DEVICE=br0<br>TYPE=Bridge<br>BOOTPROTO=static<br>IPADDR=192.168.1.1<br>NETMASK=255.255.255.0<br>ONBOOT=yes<br>NM_CONTROLLED=no<br>PREFIX=24<br>ARPCHECK=no<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">修改eth1-eth5的配置文件。</span><br></pre></td></tr></table></figure></p>
-<p>vi /etc/sysconfig/network-scripts/ifcfg-eth1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">修改如下内容：</span><br></pre></td></tr></table></figure></p>
-<p>ONBOOT=yes<br>NM_CONTROLLED=yes<br>BOOTPROTO=none<br>BRIDGE=br0<br>ARPCHECK=no<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 注： br0， eth1-eth5都不要设置CATEWAY，br0或ppp0。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## DHCP, Adblock &amp; DNS</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### Dnsmasq</span><br></pre></td></tr></table></figure></p>
-<p>yum install dnsmasq<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 配置dnsmasq</span><br></pre></td></tr></table></figure></p>
-<p>cp /etc/hosts /etc/dnsmasq.d/hosts<br>echo ‘127.0.0.1 localhost centos.router’ &gt; /etc/dnsmasq.d/hosts</p>
-<p>cp /etc/resolv.conf /etc/dnsmasq.d/resolv.conf<br>echo ‘nameserver 8.8.8.8’ &gt; /etc/dnsmasq.d/resolv.conf</p>
-<p>echo “conf-dir=/etc/dnsmasq.d” &gt;&gt; /etc/dnsmasq.conf</p>
-<p>wget -4 –no-check-certificate -O /etc/dnsmasq.d/accelerated-domains.china.conf <a href="https://github.com/felixonmars/dnsmasq-china-list/raw/master/accelerated-domains.china.conf" target="_blank" rel="noopener">https://github.com/felixonmars/dnsmasq-china-list/raw/master/accelerated-domains.china.conf</a></p>
-<p>wget -4 –no-check-certificate -O /etc/dnsmasq.d/bogus-nxdomain.china.conf <a href="https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf" target="_blank" rel="noopener">https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>vi /etc/dnsmasq.conf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 开启参数：</span><br></pre></td></tr></table></figure></p>
-<p>log-queries<br>log-facility=/var/log/dnsmasq.log<br>log-async=20</p>
-<p>addn-hosts=/etc/dnsmasq.d/hosts<br>no-hosts</p>
-<p>resolv-file=/etc/dnsmasq.d/resolv.conf<br>strict-order<br>no-resolv<br>no-poll<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### DHCP Server</span><br></pre></td></tr></table></figure></p>
-<p>dhcp-range=192.168.1.50,192.168.1.150,255.255.255.0,12h<br>dhcp-option=192.168.1.1<br>domain=centos.router<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">退出保存  /etc/dnsmasq.conf</span><br></pre></td></tr></table></figure></p>
-<p>service dnsmasq restart<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">####CN IP</span><br></pre></td></tr></table></figure></p>
-<p>wget -O- ‘<a href="http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&#39;" target="_blank" rel="noopener">http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&#39;</a> | awk -F| ‘/CN|ipv4/ { printf(“%s/%d\n”, $4, 32-log($5)/log(2)) }’ &gt; /etc/chinadns_chnroute.txt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### Shadowsocks-libev  </span><br><span class="line"></span><br><span class="line">####Install shadowsocks</span><br></pre></td></tr></table></figure></p>
-<p>cd /etc/yum.repos.d/<br>wget <a href="https://copr.fedoraproject.org/coprs/librehat/shadowsocks/repo/epel-6/librehat-shadowsocks-epel-6.repo" target="_blank" rel="noopener">https://copr.fedoraproject.org/coprs/librehat/shadowsocks/repo/epel-6/librehat-shadowsocks-epel-6.repo</a> </p>
-<p>yum update<br>yum install epel-release -y<br>yum install shadowsocks-libev<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">####Iptables</span><br></pre></td></tr></table></figure></p>
-<p>vim /etc/sysctl.conf<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>net.ipv4.ip_forward = 1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">编写防火墙脚本：</span><br></pre></td></tr></table></figure></p>
-<p>vim router.firewall.sh</p>
-<p>chmod +x router.firewall.sh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>#!/bin/bash</p>
-<p>#Your SS Server IP<br>SHADOWSOCKS_SERVER_HOST=”x.x.x.x”</p>
-<p>#Your SS Server Local Port<br>SHADOWSOCKS_LOCAL_PORT=”xxxx”</p>
-<p>sed -i ‘s/114.114.114.114/127.0.0.1#3210/‘ /etc/dnsmasq.d/gfwlist.conf<br>/etc/init.d/dnsmasq restart</p>
-<p>/usr/bin/ss-redir stop<br>/usr/bin/ss-tunnel stop</p>
-<p>killall ss-redir<br>killall ss-tunnel</p>
-<p>echo “server=/#/127.0.0.1#3210” &gt; /etc/dnsmasq.d/gfwlist.conf</p>
-<p>nohup /usr/bin/ss-redir  -b 0.0.0.0 -c /etc/shadowsocks.json -f /var/run/shadowsocks.pid -u -v &amp;<br>nohup /usr/bin/ss-tunnel  -b 0.0.0.0 -c /etc/shadowsocks.json -l 3210 -L 8.8.8.8:53 -u -v &amp;</p>
-<p>#INPUT<br>iptables -F<br>iptables -X<br>iptables -Z</p>
-<p>iptables -P INPUT   DROP<br>iptables -P OUTPUT  ACCEPT<br>iptables -P FORWARD ACCEPT</p>
-<p>iptables -A INPUT -i lo -j ACCEPT<br>iptables -A INPUT -m state –state RELATED,ESTABLISHED -j ACCEPT</p>
-<p>iptables -A INPUT -d 0.0.0.0/8 -j ACCEPT<br>iptables -A INPUT -d 10.0.0.0/8 -j ACCEPT<br>iptables -A INPUT -d 127.0.0.0/8 -j ACCEPT<br>iptables -A INPUT -d 169.254.0.0/16 -j ACCEPT<br>iptables -A INPUT -d 172.16.0.0/12 -j ACCEPT<br>iptables -A INPUT -d 192.168.0.0/16 -j ACCEPT<br>iptables -A INPUT -d 224.0.0.0/4 -j ACCEPT<br>iptables -A INPUT -d 240.0.0.0/4 -j ACCEPT</p>
-<p>#NAT<br>iptables -F -t nat<br>iptables -X -t nat<br>iptables -Z -t nat</p>
-<p>iptables -t nat -N SHADOWSOCKS<br>iptables -t nat -N SHADOWSOCKS_WHITELIST</p>
-<p>iptables -t nat -A SHADOWSOCKS -d $SHADOWSOCKS_SERVER_HOST -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN<br>iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN</p>
-<p>iptables -t nat -A SHADOWSOCKS -j SHADOWSOCKS_WHITELIST<br>iptables -t nat -A SHADOWSOCKS -m mark –mark 1 -j RETURN</p>
-<p>iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT –to-ports $SHADOWSOCKS_LOCAL_PORT<br>iptables -t nat -A PREROUTING -p tcp -j SHADOWSOCKS</p>
-<p>for white_ip in <code>cat /etc/chinadns_chnroute.txt</code>;<br>do<br>        iptables -t nat -A SHADOWSOCKS_WHITELIST -d “${white_ip}” -j MARK –set-mark 1<br>        echo ${white_ip}<br>done</p>
-<p>iptables -t nat -A POSTROUTING -o eth0     -s 192.168.1.0/24 -j MASQUERADE<br>iptables -A FORWARD -s 192.168.1.0/24 -j ACCEPT<br>iptables -A FORWARD -d 192.168.1.0/24 -j ACCEPT</p>
-<p>/etc/init.d/iptables save</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">执行:</span><br></pre></td></tr></table></figure>
-<p>./router.firewall.sh<br>~~~</p>
+<p><img src="http://img.blog.sonjin.com/2019/02/19/IMG_0253.JPG" alt="IMG_0253"></p>
+<h2 id="制作安装U盘"><a href="#制作安装U盘" class="headerlink" title="制作安装U盘"></a>制作安装U盘</h2><p>需要一个4G以上的U盘。</p>
+<p>下载安装镜像。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://mirrors.163.com/centos/6.10/isos/x86_64/CentOS-6.10-x86_64-minimal.iso</span><br></pre></td></tr></table></figure>
+<p>格式化U盘，并把系统写入U盘。</p>
+<p>Mac 可以执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">diskutil unmountDisk /dev/disk2</span><br><span class="line">sudo dd if=/CentOS-6.10-x86_64-minimal.iso of=/dev/rdisk2 bs=1m</span><br></pre></td></tr></table></figure>
+<h2 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h2><p>U盘插入主板，开始安装系统，大致如下：<br>选Skip。</p>
+<p><img src="http://img.blog.sonjin.com/2019/02/19/Install1.png" alt="Install"></p>
+<p>选语言与键盘，时区等。<br> <img src="http://img.blog.sonjin.com/2019/02/19/Install2.png" alt="选语言与键盘时区等"></p>
+<p>设置密码。<br> <img src="http://img.blog.sonjin.com/2019/02/19/Install4.png" alt="设置密码"></p>
+<p>分区。<br> <img src="http://img.blog.sonjin.com/2019/02/19/Install5.png" alt="分区"></p>
+<p>安装系统软件。<br> <img src="http://img.blog.sonjin.com/2019/02/19/Install7.png" alt="安装系统软件"></p>
+<h2 id="设置网卡"><a href="#设置网卡" class="headerlink" title="设置网卡"></a>设置网卡</h2><p>路由器上有6个千兆网口，eth0设置成WAN， 其他设置成LAN。</p>
+<p>有两种情况：</p>
+<h3 id="1-WAN口连接其他路由，直接能上网。"><a href="#1-WAN口连接其他路由，直接能上网。" class="headerlink" title="1) WAN口连接其他路由，直接能上网。"></a>1) WAN口连接其他路由，直接能上网。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth0</span><br></pre></td></tr></table></figure>
+<p>修改如下内容:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TYPE=Ethernet</span><br><span class="line">ONBOOT=yes</span><br><span class="line">NM_CONTROLLED=yes</span><br><span class="line">BOOTPROTO=dhcp</span><br></pre></td></tr></table></figure>
+<h3 id="2-WAN连接的是Modem，需要拨号。"><a href="#2-WAN连接的是Modem，需要拨号。" class="headerlink" title="2) WAN连接的是Modem，需要拨号。"></a>2) WAN连接的是Modem，需要拨号。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install ppp rp-pppoe</span><br></pre></td></tr></table></figure>
+<p>执行 pppoe-setup  按照提示填写ISP 提供的账号密码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pppoe-setup</span><br></pre></td></tr></table></figure>
+<h3 id="设置桥连接。把eth1-eth5-5个网口关联到-br0。"><a href="#设置桥连接。把eth1-eth5-5个网口关联到-br0。" class="headerlink" title="设置桥连接。把eth1-eth5 5个网口关联到 br0。"></a>设置桥连接。把eth1-eth5 5个网口关联到 br0。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-br0</span><br></pre></td></tr></table></figure>
+<p>修改如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">DEVICE=br0</span><br><span class="line">TYPE=Bridge</span><br><span class="line">BOOTPROTO=static</span><br><span class="line">IPADDR=192.168.1.1</span><br><span class="line">NETMASK=255.255.255.0</span><br><span class="line">ONBOOT=yes</span><br><span class="line">NM_CONTROLLED=no</span><br><span class="line">PREFIX=24</span><br><span class="line">ARPCHECK=no</span><br></pre></td></tr></table></figure>
+<p>修改eth1-eth5的配置文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/network-scripts/ifcfg-eth1</span><br></pre></td></tr></table></figure>
+<p>修改如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ONBOOT=yes</span><br><span class="line">NM_CONTROLLED=yes</span><br><span class="line">BOOTPROTO=none</span><br><span class="line">BRIDGE=br0</span><br><span class="line">ARPCHECK=no</span><br></pre></td></tr></table></figure>
+<p>…</p>
+<blockquote>
+<p>注： br0， eth1-eth5都不要设置CATEWAY，br0或ppp0 可设置。</p>
+</blockquote>
+<h2 id="DHCP-Adblock-amp-DNS"><a href="#DHCP-Adblock-amp-DNS" class="headerlink" title="DHCP, Adblock &amp; DNS"></a>DHCP, Adblock &amp; DNS</h2><h3 id="Dnsmasq"><a href="#Dnsmasq" class="headerlink" title="Dnsmasq"></a>Dnsmasq</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install dnsmasq</span><br></pre></td></tr></table></figure>
+<h4 id="配置dnsmasq"><a href="#配置dnsmasq" class="headerlink" title="配置dnsmasq"></a>配置dnsmasq</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cp /etc/hosts /etc/dnsmasq.d/hosts</span><br><span class="line">echo &apos;127.0.0.1 localhost centos.router&apos; &gt; /etc/dnsmasq.d/hosts</span><br><span class="line"></span><br><span class="line">cp /etc/resolv.conf /etc/dnsmasq.d/resolv.conf</span><br><span class="line">echo &apos;nameserver 8.8.8.8&apos; &gt; /etc/dnsmasq.d/resolv.conf</span><br><span class="line"></span><br><span class="line">echo &quot;conf-dir=/etc/dnsmasq.d&quot; &gt;&gt; /etc/dnsmasq.conf</span><br><span class="line"></span><br><span class="line">wget -4 --no-check-certificate -O /etc/dnsmasq.d/accelerated-domains.china.conf https://github.com/felixonmars/dnsmasq-china-list/raw/master/accelerated-domains.china.conf</span><br><span class="line"> </span><br><span class="line">wget -4 --no-check-certificate -O /etc/dnsmasq.d/bogus-nxdomain.china.conf https://github.com/felixonmars/dnsmasq-china-list/raw/master/bogus-nxdomain.china.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/dnsmasq.conf</span><br></pre></td></tr></table></figure>
+<h4 id="开启参数："><a href="#开启参数：" class="headerlink" title="开启参数："></a>开启参数：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">log-queries</span><br><span class="line">log-facility=/var/log/dnsmasq.log</span><br><span class="line">log-async=20</span><br><span class="line"></span><br><span class="line">addn-hosts=/etc/dnsmasq.d/hosts</span><br><span class="line">no-hosts</span><br><span class="line"></span><br><span class="line">resolv-file=/etc/dnsmasq.d/resolv.conf</span><br><span class="line">strict-order</span><br><span class="line">no-resolv</span><br><span class="line">no-poll</span><br></pre></td></tr></table></figure>
+<h4 id="DHCP-Server"><a href="#DHCP-Server" class="headerlink" title="DHCP Server"></a>DHCP Server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dhcp-range=192.168.1.50,192.168.1.150,255.255.255.0,12h</span><br><span class="line">dhcp-option=192.168.1.1</span><br><span class="line">domain=centos.router</span><br></pre></td></tr></table></figure>
+<p>退出保存  /etc/dnsmasq.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service dnsmasq restart</span><br></pre></td></tr></table></figure>
+<h4 id="CN-IP"><a href="#CN-IP" class="headerlink" title="CN IP"></a>CN IP</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O- &apos;http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&apos; | awk -F\| &apos;/CN\|ipv4/ &#123; printf(&quot;%s/%d\n&quot;, $4, 32-log($5)/log(2)) &#125;&apos; &gt; /etc/chinadns_chnroute.txt</span><br></pre></td></tr></table></figure>
+<h3 id="Shadowsocks-libev"><a href="#Shadowsocks-libev" class="headerlink" title="Shadowsocks-libev"></a>Shadowsocks-libev</h3><h4 id="Install-shadowsocks"><a href="#Install-shadowsocks" class="headerlink" title="Install shadowsocks"></a>Install shadowsocks</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/yum.repos.d/</span><br><span class="line">wget https://copr.fedoraproject.org/coprs/librehat/shadowsocks/repo/epel-6/librehat-shadowsocks-epel-6.repo </span><br><span class="line"></span><br><span class="line">yum update</span><br><span class="line">yum install epel-release -y</span><br><span class="line">yum install shadowsocks-libev</span><br></pre></td></tr></table></figure>
+<h4 id="Iptables"><a href="#Iptables" class="headerlink" title="Iptables"></a>Iptables</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line">#修改 net.ipv4.ip_forward</span><br><span class="line">net.ipv4.ip_forward = 1</span><br></pre></td></tr></table></figure>
+<p>编写防火墙脚本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">touch router.firewall.sh</span><br><span class="line"></span><br><span class="line">chmod +x router.firewall.sh</span><br><span class="line"></span><br><span class="line">vim router.firewall.sh</span><br></pre></td></tr></table></figure>
+<p>写入如下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"> </span><br><span class="line">#Your SS Server IP</span><br><span class="line">SHADOWSOCKS_SERVER_HOST=&quot;x.x.x.x&quot;</span><br><span class="line"></span><br><span class="line">#Your SS Server Local Port</span><br><span class="line">SHADOWSOCKS_LOCAL_PORT=&quot;xxxx&quot;</span><br><span class="line"></span><br><span class="line">sed -i &apos;s/114.114.114.114/127.0.0.1#3210/&apos; /etc/dnsmasq.d/gfwlist.conf</span><br><span class="line">/etc/init.d/dnsmasq restart</span><br><span class="line"> </span><br><span class="line">/usr/bin/ss-redir stop</span><br><span class="line">/usr/bin/ss-tunnel stop</span><br><span class="line"> </span><br><span class="line">killall ss-redir</span><br><span class="line">killall ss-tunnel</span><br><span class="line"> </span><br><span class="line">echo &quot;server=/#/127.0.0.1#3210&quot; &gt; /etc/dnsmasq.d/gfwlist.conf</span><br><span class="line"> </span><br><span class="line">nohup /usr/bin/ss-redir  -b 0.0.0.0 -c /etc/shadowsocks.json -f /var/run/shadowsocks.pid -u -v &amp;</span><br><span class="line">nohup /usr/bin/ss-tunnel  -b 0.0.0.0 -c /etc/shadowsocks.json -l 3210 -L 8.8.8.8:53 -u -v &amp;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">#INPUT</span><br><span class="line">iptables -F</span><br><span class="line">iptables -X</span><br><span class="line">iptables -Z</span><br><span class="line"> </span><br><span class="line">iptables -P INPUT   DROP</span><br><span class="line">iptables -P OUTPUT  ACCEPT</span><br><span class="line">iptables -P FORWARD ACCEPT</span><br><span class="line"></span><br><span class="line">iptables -A INPUT -i lo -j ACCEPT</span><br><span class="line">iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line"></span><br><span class="line">iptables -A INPUT -d 0.0.0.0/8 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 10.0.0.0/8 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 127.0.0.0/8 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 169.254.0.0/16 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 172.16.0.0/12 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 192.168.0.0/16 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 224.0.0.0/4 -j ACCEPT</span><br><span class="line">iptables -A INPUT -d 240.0.0.0/4 -j ACCEPT</span><br><span class="line"> </span><br><span class="line">#NAT</span><br><span class="line">iptables -F -t nat</span><br><span class="line">iptables -X -t nat</span><br><span class="line">iptables -Z -t nat</span><br><span class="line"> </span><br><span class="line">iptables -t nat -N SHADOWSOCKS</span><br><span class="line">iptables -t nat -N SHADOWSOCKS_WHITELIST</span><br><span class="line"> </span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d $SHADOWSOCKS_SERVER_HOST -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 0.0.0.0/8 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 10.0.0.0/8 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 127.0.0.0/8 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 169.254.0.0/16 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 172.16.0.0/12 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 192.168.0.0/16 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 224.0.0.0/4 -j RETURN</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN</span><br><span class="line"> </span><br><span class="line">iptables -t nat -A SHADOWSOCKS -j SHADOWSOCKS_WHITELIST</span><br><span class="line">iptables -t nat -A SHADOWSOCKS -m mark --mark 1 -j RETURN</span><br><span class="line"> </span><br><span class="line">iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports $SHADOWSOCKS_LOCAL_PORT</span><br><span class="line">iptables -t nat -A PREROUTING -p tcp -j SHADOWSOCKS</span><br><span class="line"> </span><br><span class="line">for white_ip in `cat /etc/chinadns_chnroute.txt`;</span><br><span class="line">do</span><br><span class="line">        iptables -t nat -A SHADOWSOCKS_WHITELIST -d &quot;$&#123;white_ip&#125;&quot; -j MARK --set-mark 1</span><br><span class="line">        echo $&#123;white_ip&#125; </span><br><span class="line">done</span><br><span class="line"> </span><br><span class="line">iptables -t nat -A POSTROUTING -o eth0     -s 192.168.1.0/24 -j MASQUERADE</span><br><span class="line">iptables -A FORWARD -s 192.168.1.0/24 -j ACCEPT</span><br><span class="line">iptables -A FORWARD -d 192.168.1.0/24 -j ACCEPT</span><br><span class="line"> </span><br><span class="line">/etc/init.d/iptables save</span><br></pre></td></tr></table></figure>
+<p>执行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./router.firewall.sh</span><br></pre></td></tr></table></figure>
+<p>注：SS服务器一定要开启对应的 udp 端口</p>
+<h2 id="samba"><a href="#samba" class="headerlink" title="samba"></a>samba</h2><h3 id="Install-samba"><a href="#Install-samba" class="headerlink" title="Install samba"></a>Install samba</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">yum install samba </span><br><span class="line"></span><br><span class="line">chkconfig smb on</span><br><span class="line"></span><br><span class="line">useradd shareuser -s /sbin/nologin</span><br><span class="line"></span><br><span class="line">smbpasswd -a shareuser</span><br><span class="line"></span><br><span class="line">mkdir /share</span><br><span class="line">chown -R shareuser:root /share/</span><br></pre></td></tr></table></figure>
+<p>配置samba</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/samba/smb.conf</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[share]</span><br><span class="line">      comment = Share</span><br><span class="line">      path = /share</span><br><span class="line">      writable = yes</span><br><span class="line">      valid users = shareuser</span><br></pre></td></tr></table></figure>
+<p>启动 samba</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service smb start</span><br></pre></td></tr></table></figure>
 <p>EOF</p>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://flay521.com/2019/02/15/DIY-Media-Server/" data-id="cjsbfphis0000qtccxwrlc2q4" class="article-share-link">分享到</a>
+        <a data-url="http://flay521.github.io/2019/02/15/DIY-Media-Server/" data-id="cjsbkt8v70000gkcc7f3vo9vq" class="article-share-link">分享到</a>
       
 
       
@@ -319,7 +312,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://flay521.com/2012/11/29/Learning-PHP-Data-Objects-Chapter-1-Introduction/" data-id="cjsbfphjs0005qtcck65ofrhd" class="article-share-link">分享到</a>
+        <a data-url="http://flay521.github.io/2012/11/29/Learning-PHP-Data-Objects-Chapter-1-Introduction/" data-id="cjsbkt8w70005gkccqsa7sfxy" class="article-share-link">分享到</a>
       
 
       
@@ -341,7 +334,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2019 Peter Song<br>
+      &copy; 2019 Pengfei Song<br>
       Theme <a href="https://github.com/henryhuang/oishi" target="_blank">Oishi</a>, Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
