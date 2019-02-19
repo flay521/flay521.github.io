@@ -1452,6 +1452,7 @@ a.article-title:hover {
   border: none;
   margin: 0;
   padding: 0;
+  font-size: 0.8em;
 }
 .article-entry .highlight table {
   margin: 0;
